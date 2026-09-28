@@ -1,0 +1,37 @@
+# Each question lists the source(s) a correct answer must cite. Expected sources are file names (line-agnostic).
+- q: What is the Rds(on) of AS60R045?
+  expect: [AS60R045_datasheet_rev2.md]
+  must_contain: "45"
+- q: gate charge of as60r045
+  expect: [AS60R045_datasheet_rev2.md]
+  must_contain: "68"          # rev2 value; rev1 said 75 and is superseded
+- q: AS60R070 on-resistance
+  expect: [AS60R070_datasheet.md]
+  must_contain: "70"
+- q: NX-PHY100 operating temperature range
+  expect: [NX-PHY100_datasheet.md]
+  must_contain: "-40"
+- q: power consumption of NX-PHY100
+  expect: [NX-PHY100_datasheet.md]
+  must_contain: "380"
+- q: Is AS60R070 end of life? What is the last time buy date?
+  expect: [PCN-2026-118.md]
+  must_contain: "2026-12-31"
+- q: What replaces AS60R070?
+  expect: [PCN-2026-118.md]
+  must_contain: "AS60R045"
+- q: Do I need to requalify NX-PHY100 after the assembly site change PCN?
+  expect: [PCN-2026-204.md]
+  must_contain: "re-qualify"
+- q: What applications is AS60R045 for?
+  expect: [AS60R045_datasheet_rev2.md]
+  must_contain: "server"
+- q: gate resistor recommendation for AS60R045
+  expect: [AS60R045_datasheet_rev2.md]
+  must_contain: "gate resistor"
+- q: What interface does NX-PHY100 use?
+  expect: [NX-PHY100_datasheet.md]
+  must_contain: "RGMII"
+- q: What is the price of AS60R045?
+  expect: []                    # not in the KB -> must say not found, not invent
+  must_contain: "Not found"
